@@ -26,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void OnButtonClick2(View view){
-        Toast.makeText(this, "Button 클릭해써여22", Toast.LENGTH_SHORT).show();
+    public void ImgChange(View view){
+        Intent intent = new Intent(getApplicationContext(), ImgChangeActivity.class);
+        startActivity(intent);
     }
 
 
