@@ -31,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ImgChange2(View view){
+        Intent intent = new Intent(getApplicationContext(), ImgChangeActivity2.class);
+        startActivity(intent);
+    }
+
 
 
 

@@ -36,7 +36,8 @@
             />
         <Button
             android:id="@+id/btn1_3"
-            android:text=""
+            android:onClick="@{activity::ImgChange2}"
+            android:text="사진바꾸기2"
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
