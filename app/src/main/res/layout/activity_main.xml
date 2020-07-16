@@ -45,7 +45,8 @@
             />
         <Button
             android:id="@+id/btn1_4"
-            android:text=""
+            android:onClick="@{activity::Counter}"
+            android:text="Counter"
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
