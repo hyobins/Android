@@ -70,7 +70,8 @@
             />
         <Button
             android:id="@+id/btn2_2"
-            android:text=""
+            android:onClick="@{activity::Login}"
+            android:text="Login"
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
