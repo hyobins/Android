@@ -79,7 +79,8 @@
             />
         <Button
             android:id="@+id/btn2_3"
-            android:text=""
+            android:onClick="@{activity::ListView}"
+            android:text="ListView"
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

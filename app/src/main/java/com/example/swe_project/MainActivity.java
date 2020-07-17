@@ -50,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ListView(View view){
+        Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
+        startActivity(intent);
+
+    }
+
 
 
 
