@@ -7,7 +7,6 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.swe_project.databinding.ActivityMainBinding;
 
@@ -38,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void Counter(View view){
         Intent intent = new Intent(getApplicationContext(), CountActivity.class);
+        startActivity(intent);
+    }
+
+    public void Calculator(View view){
+        Intent intent = new Intent(getApplicationContext(), CalcActivity.class);
         startActivity(intent);
     }
 

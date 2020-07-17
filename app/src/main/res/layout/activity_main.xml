@@ -61,7 +61,8 @@
         >
         <Button
             android:id="@+id/btn2_1"
-            android:text=""
+            android:onClick="@{activity::Calculator}"
+            android:text="Calculator"
             android:textAllCaps="false"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
