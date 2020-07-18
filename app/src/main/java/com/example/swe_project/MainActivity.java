@@ -53,7 +53,21 @@ public class MainActivity extends AppCompatActivity {
     public void ListView(View view){
         Intent intent = new Intent(getApplicationContext(), ListViewActivity.class);
         startActivity(intent);
+    }
 
+    public void LifeCycle(View view){
+        Intent intent = new Intent(getApplicationContext(), LifeCycleActivity.class);
+        startActivity(intent);
+    }
+
+    public void ListView2(View view){
+        Intent intent = new Intent(getApplicationContext(), ListViewActivity_2.class);
+        startActivity(intent);
+    }
+
+    public void Address(View view){
+        Intent intent = new Intent(getApplicationContext(), AddressActivity.class);
+        startActivity(intent);
     }
 
 
