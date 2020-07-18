@@ -1,4 +1,4 @@
-package com.example.swe_project;
+package Lecture3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.swe_project.R;
 
 import java.util.ArrayList;
 

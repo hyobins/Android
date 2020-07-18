@@ -1,4 +1,10 @@
 package com.example.swe_project;
+import Lecture3.*;
+import Week1.CalcActivity;
+import Week1.CountActivity;
+import Week1.ImgChangeActivity;
+import Week1.ImgChangeActivity2;
+import Week1.LinearActivity_1;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

@@ -1,8 +1,10 @@
-package com.example.swe_project;
+package Week1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.swe_project.R;
 
 public class LinearActivity_1 extends AppCompatActivity {
 

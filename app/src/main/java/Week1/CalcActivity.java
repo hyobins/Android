@@ -1,4 +1,4 @@
-package com.example.swe_project;
+package Week1;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.Nullable;
@@ -10,6 +10,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.swe_project.R;
 
 import butterknife.BindDimen;
 import butterknife.BindView;

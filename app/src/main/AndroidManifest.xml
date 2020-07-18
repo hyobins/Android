@@ -9,17 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddressActivity"></activity>
-        <activity android:name=".ListViewActivity_2" />
-        <activity android:name=".NavBarActivity" />
+        <activity android:name="Lecture3.AddressActivity"></activity>
+        <activity android:name="Lecture3.ListViewActivity_2" />
         <activity android:name=".LifeCycleActivity" />
-        <activity android:name=".ListViewActivity" />
+        <activity android:name="Lecture3.ListViewActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".CalcActivity" />
-        <activity android:name=".CountActivity" />
-        <activity android:name=".ImgChangeActivity2" />
-        <activity android:name=".ImgChangeActivity" />
-        <activity android:name=".LinearActivity_1" />
+        <activity android:name="Week1.CalcActivity" />
+        <activity android:name="Week1.CountActivity" />
+        <activity android:name="Week1.ImgChangeActivity2" />
+        <activity android:name="Week1.ImgChangeActivity" />
+        <activity android:name="Week1.LinearActivity_1" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

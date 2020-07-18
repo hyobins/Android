@@ -1,4 +1,4 @@
-package com.example.swe_project;
+package Lecture3;
 
 public class Item {
     private String itemName;

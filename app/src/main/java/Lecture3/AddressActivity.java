@@ -1,9 +1,11 @@
-package com.example.swe_project;
+package Lecture3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
+
+import com.example.swe_project.R;
 
 import java.util.ArrayList;
 
@@ -14,8 +16,8 @@ public class AddressActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_view_2);
-        itemListView = findViewById(R.id.nameList);
+        setContentView(R.layout.activity_address);
+        itemListView = findViewById(R.id.addressList);
         CustomListAdapter adapter = new CustomListAdapter(this, generateMyArrayList());
         itemListView.setAdapter(adapter);
     }

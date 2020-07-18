@@ -1,4 +1,4 @@
-package com.example.swe_project;
+package Week1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.swe_project.R;
 
 public class ImgChangeActivity extends AppCompatActivity {
     Button button;

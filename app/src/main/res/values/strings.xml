@@ -3,10 +3,16 @@
     <string-array name="items_name">
         <item>이효빈</item>
         <item>홍길동</item>
+        <item>이건</item>
+        <item>집</item>
     </string-array>
     <string-array name="item_description">
-        <item>010-0000-0000</item>동
-        <item>020-0000-0000</item>
+        <item>010-6299-3863</item>
+        <item>010-0000-0000</item>
+        <item>010-3272-2833</item>
+        <item>033-744-3333</item>
+
+
 
     </string-array>
 </resources>
