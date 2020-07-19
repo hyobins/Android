@@ -2,16 +2,23 @@ package Lecture3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.swe_project.R;
+import com.kennyc.bottomsheet.BottomSheetListener;
+import com.kennyc.bottomsheet.BottomSheetMenuDialogFragment;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -19,9 +26,11 @@ import java.util.List;
 
 public class AddressActivity extends AppCompatActivity {
 
+
     private ListView itemListView = null;
     private ArrayList<Item> list;
     EditText editTextFilter;
+    Context context = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +42,49 @@ public class AddressActivity extends AppCompatActivity {
         list = generateMyArrayList();
         CustomListAdapter adapter = new CustomListAdapter(this, list);
         itemListView.setAdapter(adapter);
+        context = this;
+
+
+        //itemListView 클릭 이벤트
+        itemListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(context,"t",Toast.LENGTH_SHORT).show();
+                new BottomSheetMenuDialogFragment.Builder(context)
+                        .setSheet(R.menu.bottom_sheet)
+                        .setTitle("BottomSheet")
+                        .setListener(new BottomSheetListener() {
+                            @Override
+                            public void onSheetShown(BottomSheetMenuDialogFragment bottomSheetMenuDialogFragment, Object o) {
+
+                            }
+
+                            @Override
+                            public void onSheetItemSelected(BottomSheetMenuDialogFragment bottomSheetMenuDialogFragment, MenuItem menuItem, Object o) {
+                                switch (menuItem.getItemId()) {
+                                    case R.id.editPhoneItem:
+                                    case R.id.deletePhoneItem:
+                                    case R.id.insertPhoneItem:
+                                        break;
+                                }
+
+                            }
+
+                            @Override
+                            public void onSheetDismissed(BottomSheetMenuDialogFragment bottomSheetMenuDialogFragment, Object o, int i) {
+
+                            }
+                        })
+//                        .setObject(myObject)
+                        .show(getSupportFragmentManager());
+                return false;
+            }
+
+
+        });
+
 
         //Filtering 기능 구현
-
         editTextFilter.addTextChangedListener(new TextWatcher(){
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -55,7 +104,15 @@ public class AddressActivity extends AppCompatActivity {
                 // 입력하기 전에 조치
             }
         });
+
+
+
+
+
+
+
     }
+
 
     public void search(String charText){
         list.clear();

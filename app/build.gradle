@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.swe_project"
-        minSdkVersion 23
-        targetSdkVersion 30
+        minSdkVersion 19
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
@@ -44,6 +44,8 @@ dependencies {
     //Butterknife 사용하기
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    implementation 'com.github.Kennyc1012:BottomSheetMenu:3.1.3'
 
 
 }
