@@ -41,6 +41,7 @@ public class AddressActivity extends AppCompatActivity {
 //        CustomListAdapter adapter = new CustomListAdapter(this, generateMyArrayList());
         list = generateMyArrayList();
         CustomListAdapter adapter = new CustomListAdapter(this, list);
+
         itemListView.setAdapter(adapter);
         context = this;
 
@@ -49,7 +50,7 @@ public class AddressActivity extends AppCompatActivity {
         itemListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(context,"t",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"---------ㅎㅎㅎㅎㅎㅎ--------",Toast.LENGTH_SHORT).show();
                 new BottomSheetMenuDialogFragment.Builder(context)
                         .setSheet(R.menu.bottom_sheet)
                         .setTitle("BottomSheet")
@@ -67,7 +68,6 @@ public class AddressActivity extends AppCompatActivity {
                                     case R.id.insertPhoneItem:
                                         break;
                                 }
-
                             }
 
                             @Override
